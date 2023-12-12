@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.countAdownContainer {
+  padding: 38px;
+  text-align: center;
+}
+
+.countAdownContainer > h5 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 6¡00;
+  line-height: 36px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 2rem;
+}
+
+.countdown > div {
+  color: #fff;
+  font-family: Inter;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px;
+}
+
+.countdown > div:nth-child(odd) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown > div > h2 {
+  margin: 0px 0px 1rem 0px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(174, 173, 173),
+    black 50%,
+    /* Solid black at 50% */ transparent 50%
+  );
+  border-radius: 16px; /* Adjust the border-radius for a beveled effect */
+  box-shadow: 0 0 16px rgb(77, 77, 77);
+}
+
+.countdown > div > p:nth-child(2) {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .countAdownContainer {
+    padding: 51 25px;
+  }
+
+  .countAdownContainer > h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .countdown {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .countdown > div {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .countdown > div > h2 {
+    margin: 0;
+    height: 60px;
+    width: 60px;
+  }
+
+  .countdown > div > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .countAdownContainer {
+    padding: 51 25px;
+  }
+
+  .countAdownContainer > h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .countdown {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .countdown > div {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .countdown > div > h2 {
+    margin: 0;
+    height: 60px;
+    width: 60px;
+  }
+
+  .countdown > div > p:nth-child(2) {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
