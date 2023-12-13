@@ -131,7 +131,7 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+/* @media screen and (min-width: 767px) and (max-width: 1023px) {
   .countAdownContainer {
     padding: 51 25px;
   }
@@ -193,4 +193,4 @@ body {
     font-size: 14px;
     line-height: 23px;
   }
-}
+} */
