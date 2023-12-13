@@ -71,7 +71,7 @@ body {
 .countAdownContainer > h5 {
   color: #fff;
   font-family: Futura;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
@@ -83,15 +83,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  margin-top: 2rem;
+  gap: 30px;
+  margin-top: 1.5rem;
 }
 
 .countdown > div,
 .time > div {
   color: #fff;
   font-family: Futura;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 100px;
 }
@@ -105,7 +105,7 @@ body {
 
 .countdown > div > h2 {
   margin: 0px 0px 0.5rem 0px;
-  width: 170px;
+  width: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +124,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Futura;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
