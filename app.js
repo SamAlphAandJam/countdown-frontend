@@ -21,10 +21,10 @@ const launchDate = new Date("2023-12-31T00:00:00").getTime();
 const countdown = countdownToLaunch(launchDate);
 
 const daysDiv = document.querySelector(".countdown > div:nth-child(1) > h2");
-const hourssDiv = document.querySelector(".countdown > div:nth-child(3) > h2");
-const minutesDiv = document.querySelector(".countdown > div:nth-child(5) > h2");
+const hourssDiv = document.querySelector(".countdown > div:nth-child(2) > h2");
+const minutesDiv = document.querySelector(".countdown > div:nth-child(3) > h2");
 const secondssDiv = document.querySelector(
-  ".countdown > div:nth-child(7) > h2"
+  ".countdown > div:nth-child(4) > h2"
 );
 
 const startTimer = () => {
