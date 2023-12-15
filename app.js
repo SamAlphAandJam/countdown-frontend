@@ -28,6 +28,11 @@ const secondssDiv = document.querySelector(
 );
 
 const startTimer = () => {
+  daysDiv.innerHTML = countdownToLaunch(launchDate).days;
+  hourssDiv.innerHTML = countdownToLaunch(launchDate).hours;
+  minutesDiv.innerHTML = countdownToLaunch(launchDate).minutes;
+  secondssDiv.innerHTML = countdownToLaunch(launchDate).seconds;
+
   setInterval(() => {
     daysDiv.innerHTML = countdownToLaunch(launchDate).days;
     hourssDiv.innerHTML = countdownToLaunch(launchDate).hours;
