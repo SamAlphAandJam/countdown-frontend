@@ -52,7 +52,7 @@ body {
 
 .imagesContainer > img:nth-child(1) {
   position: absolute;
-  bottom: 70px;
+  bottom: 20px;
   left: 0;
   right: 0;
   margin: auto;
@@ -80,13 +80,25 @@ body {
   margin: 0;
 }
 
+.timeContainer > h5 {
+  font-size: 82px;
+}
+
 .countdown,
 .time {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin-top: 4rem;
+  margin-top: 6rem;
+}
+
+.time {
+  margin-bottom: 4rem;
+}
+
+.time > div > h2 {
+  font-size: 330px;
 }
 
 .countdown > div,
@@ -107,7 +119,7 @@ body {
 
 .countdown > div > h2 {
   margin: 0px 0px 2rem 0px;
-  width: 250px;
+  width: 330px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -132,7 +144,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   margin-left: -40px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* @media screen and (min-width: 767px) and (max-width: 1023px) {
