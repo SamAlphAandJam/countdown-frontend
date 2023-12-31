@@ -62,13 +62,15 @@ body {
   z-index: 1;
 }
 
-.countAdownContainer {
+.countAdownContainer,
+.happyNewYear {
   padding: 38px;
   text-align: center;
   width: 100%;
 }
 
-.countAdownContainer > h5 {
+.countAdownContainer > h5,
+.happyNewYear > h4 {
   color: #fff;
   font-family: Futura;
   font-size: 62px;
@@ -78,7 +80,8 @@ body {
   margin: 0;
 }
 
-.timeContainer > h5 {
+.timeContainer > h5,
+.happyNewYear > h4 {
   font-size: 82px;
 }
 

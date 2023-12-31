@@ -3,8 +3,12 @@ function countdownToLaunch(targetDate) {
 
   const timeRemaining = targetDate - now;
 
-  if (timeRemaining <= 0) {
-    return "Launch date has passed!";
+  if (timeRemaining <= 0 || timeRemaining === NaN) {
+    const happyNewYear = document.querySelector(".happyNewYear");
+    const countdown = document.querySelector(".countAdownContainer");
+
+    countdown.style.display = "none";
+    happyNewYear.innerHTML = "<h4>Happy New Year!</h4>";
   }
 
   const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
@@ -17,7 +21,7 @@ function countdownToLaunch(targetDate) {
   return { days: days, hours: hours, minutes, minutes, seconds: seconds };
 }
 
-const launchDate = new Date("2023-12-31T00:00:00").getTime();
+const launchDate = new Date("2024-01-01T00:00:00").getTime();
 const countdown = countdownToLaunch(launchDate);
 
 const daysDiv = document.querySelector(".countdown > div:nth-child(1) > h2");
