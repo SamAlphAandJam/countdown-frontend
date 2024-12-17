@@ -8,6 +8,7 @@ function countdownToLaunch(targetDate) {
     const countdown = document.querySelector(".countAdownContainer");
 
     countdown.style.display = "none";
+    happyNewYear.style.display = "block";
     happyNewYear.innerHTML = "<h4>Happy New Year!</h4>";
   }
 
