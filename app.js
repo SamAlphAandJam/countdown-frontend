@@ -19,7 +19,12 @@ function countdownToLaunch(targetDate) {
   const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-  return { days: days, hours: hours, minutes, minutes, seconds: seconds };
+  return {
+    days: String(days).padStart(2, "0"),
+    hours: String(hours).padStart(2, "0"),
+    minutes: String(minutes).padStart(2, "0"),
+    seconds: String(seconds).padStart(2, "0"),
+  };
 }
 
 const launchDate = new Date("2025-01-01T00:00:00").getTime();
